@@ -1,0 +1,96 @@
+body{
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    -webkit-transition: opacity 600ms linear, -webkit-transform 600ms ease-in-out, -webkit-filter 600ms linear;
+    transition: opacity 600ms linear, -webkit-transform 600ms ease-in-out, -webkit-filter 600ms linear;
+    transition: transform 600ms ease-in-out, filter 600ms linear, opacity 600ms linear;
+    transition: transform 600ms ease-in-out, filter 600ms linear, opacity 600ms linear, -webkit-transform 600ms ease-in-out, -webkit-filter 600ms linear;
+}
+
+.header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    height: 56px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 8px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0.125rem 1rem rgba(183,183,206,0.2);
+    box-shadow: 0 0.125rem 1rem rgba(183,183,206,0.2);
+}
+
+.input_search {
+    width: 47px;
+    font-size: 0.875rem;
+    color: #5e5d66;
+    background-color: rgba(0,0,0,0);
+    height: 1.5rem;
+    padding: 0 1.75rem;
+    padding-left: 2.25rem;
+    border: none;
+    border-right: 1px solid #b7b7ce;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-position: 0.5rem center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2223%22%20height%3D%2223%22%20viewBox%3D%2218%2021%2023%2023%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22rotate%2845%20-13.734%2044.387%29%22%20stroke%3D%22%23FA507B%22%3E%3Cellipse%20stroke-width%3D%222%22%20cx%3D%224.6%22%20cy%3D%224.5%22%20rx%3D%224.6%22%20ry%3D%224.5%22/%3E%3Cpath%20d%3D%22M10%205h6%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.nav 
+{
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 32px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+}
+
+.nav .content 
+{
+    height: 100%
+}
+
+.nav .content .section
+{
+    position: relative;
+    padding: 0 24px;
+    height: 100%;
+    cursor: pointer;
+    cursor: pointer;
+    -webkit-transition: color 0.1s;
+    transition: color 0.1s;
+    opacity: 0.8;
+    background: none;
+    color: #9795ac;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #fff;
+}
+
+.nav .content .section.selected, .nav .content .section:hover
+{
+    color: #5e5d66;
+    border-bottom-color: #fa507b;
+}
